@@ -1,0 +1,280 @@
+@media only screen and (max-width: 1280px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0 auto;
+    background: #303e47;
+  }
+
+  .first-screen .advertisment {
+    width: 100%;
+    height: 200px;
+  }
+
+  .first-screen .page-content {
+    display: flex;
+    justify-content: space-between;
+    width: 88%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .first-screen .page-content .left-area .page-title {
+    font-size: 1.9em;
+    font-weight: 500;
+    color: #e1e42d;
+    padding-left: 16px;
+    border-left: 5px solid #e1e42d;
+  }
+
+  .first-screen .page-content .left-area .error-message {
+    font-size: 20px;
+    margin-left: 142px;
+    margin-top: 10px;
+    color: tomato;
+  }
+
+  .first-screen .page-content .left-area .page-form {
+    width: 100%;
+    margin-top: 70px;
+    position: relative;
+  }
+
+  .first-screen .page-content .left-area .page-form::after {
+    content: url("../imgs/arrow.png");
+    position: absolute;
+    top: 50%;
+    left: 83px;
+    transform: translateY(-40%);
+    pointer-events: none;
+  }
+
+  .first-screen .page-content .left-area .page-form .country-code {
+    position: relative;
+    width: 120px;
+    height: 64px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 24px;
+    font-weight: 700;
+    background: #f5f5f5;
+    color: #303e47;
+    margin-right: 20px;
+    float: left;
+    display: flex;
+    align-items: center;
+  }
+
+  .first-screen .page-content .left-area .page-form .counteries {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #fff;
+    list-style: none;
+    width: 120px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: none;
+  }
+
+  .first-screen .page-content .left-area .page-form .counteries .option-code {
+    padding: 10px 12px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #303e47;
+    opacity: 0.8;
+  }
+
+  .first-screen .page-content .left-area .page-form .mobile-number {
+    width: 340px;
+    height: 64px;
+    vertical-align: bottom;
+    padding: 0;
+    font-size: 30px;
+    font-weight: 600;
+    border: 0;
+    border-bottom: 3px solid #fff;
+    background: none;
+    color: #fff;
+  }
+
+  .first-screen .page-content .left-area .page-form .mobile-number:focus {
+    outline: 0;
+  }
+
+  .first-screen .page-content .right-area,
+  .first-screen .page-content .left-area {
+    width: 50%;
+  }
+
+  .first-screen .page-content .right-area .keypad-form {
+    width: 92%;
+    height: auto;
+    margin-left: 8%;
+  }
+
+  .first-screen .page-content .right-area .keypad-form .grid-btns {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 12px;
+  }
+
+  .first-screen .page-content .right-area .keypad-form .grid-btns .btn {
+    height: 95px;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 46px;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    background: rgb(144, 162, 174);
+    background: linear-gradient(180deg, rgba(144, 162, 174, 1) 0%, rgba(72, 97, 110, 1) 100%);
+  }
+
+  .first-screen .page-content .right-area .keypad-form .grid-btns .btn:last-child::after {
+    content: url(../imgs/backspace.png);
+    position: absolute;
+    top: 20px;
+    left: 47px;
+  }
+
+  .first-screen .page-content .right-area .keypad-form .grid-btns .btn:focus {
+    outline: none;
+  }
+
+  .first-screen .page-content .right-area .keypad-form .grid-btns .btn:active {
+    transition: all 0.4s ease-in-out;
+    background: rgb(144, 162, 174);
+  }
+
+  .first-screen .footer {
+    width: 88%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+  }
+
+  .first-screen .footer .left-area {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .first-screen .footer .left-area,
+  .first-screen .footer .right-area {
+    width: 50%;
+  }
+
+  .first-screen .footer .right-area .submit-btn {
+    position: relative;
+    float: right;
+    padding: 20px 70px 20px 30px;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 0;
+    border-radius: 6px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    background: rgb(225, 228, 45);
+    background: linear-gradient(180deg, rgba(225, 228, 45, 1) 0%, rgba(158, 159, 16, 1) 100%);
+  }
+
+  .first-screen .footer .right-area .submit-btn::after {
+    position: absolute;
+    content: url(../imgs/BTN-NEXT2.png);
+    top: 21px;
+    right: 23px;
+  }
+
+  .first-screen .footer .right-area .submit-btn:active {
+    outline: none;
+    transition: all 0.4s ease-in-out;
+    background: rgb(225, 228, 45);
+  }
+
+  .first-screen .footer .right-area .submit-btn:focus {
+    outline: none;
+  }
+
+  /* Modal */
+  .confirm-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    place-items: center;
+  }
+
+  .confirm-modal .modal-message {
+    width: 50%;
+    height: 240px;
+    border-radius: 16px;
+    background: #cbcf2a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .confirm-modal .modal-message h2 {
+    font-size: 28px;
+    color: #303e47;
+  }
+
+  .confirm-modal .modal-message .actions-btns {
+    margin-top: 50px;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .confirm-modal .modal-message .actions-btns .action {
+    width: 200px;
+    height: 52px;
+    border-radius: 4px;
+    border: 0;
+    font-size: 22px;
+    font-weight: 600;
+    background: #303e47;
+    color: #fff;
+  }
+
+  .confirm-modal .modal-message .actions-btns .action:focus {
+    outline: none;
+  }
+
+  /* Successfull Message */
+
+  .success-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e8ecf2;
+    display: none;
+    place-items: center;
+  }
+
+  .success-modal .modal-message {
+    font-size: 28px;
+    width: 45%;
+    text-align: center;
+    line-height: 42px;
+    font-weight: 600;
+    background: #67727a;
+    padding: 70px;
+    border-radius: 30px;
+    color: #fff;
+  }
+}

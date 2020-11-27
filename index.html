@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedco</title>
+    <link rel="stylesheet" href="./Style/normalize.css">
+    <link rel="stylesheet" href="./Style/styles.css">
+</head>
+
+<body>
+    <section class="first-screen">
+        <div class="advertisment">
+            <img src="./imgs/ads.png" alt="">
+        </div>
+        <div class="page-content">
+            <div class="left-area">
+                <p class="page-title">Please Enter Your Mobile Number</p>
+                <div class="page-form">
+                    <div class="country-code" id="country-code">
+                        +962
+                    </div>
+                    <ul class="counteries" id="counteries">
+                        <li class="option-code">+962</li>
+                        <li class="option-code">+966</li>
+                        <li class="option-code">+965</li>
+                        <li class="option-code">+963</li>
+                    </ul>
+                    <input type="number" class="mobile-number" id="mobile-number">
+                </div>
+                <div class="error-message">
+                    <span id="error"></span>
+                </div>
+            </div>
+            <div class="right-area">
+                <div class="keypad-form">
+                    <div class="grid-btns">
+                        <button class="btn" onclick="enterNumber(1)">1</button>
+                        <button class="btn" onclick="enterNumber(2)">2</button>
+                        <button class="btn" onclick="enterNumber(3)">3</button>
+                        <button class="btn" onclick="enterNumber(4)">4</button>
+                        <button class="btn" onclick="enterNumber(5)">5</button>
+                        <button class="btn" onclick="enterNumber(6)">6</button>
+                        <button class="btn" onclick="enterNumber(7)">7</button>
+                        <button class="btn" onclick="enterNumber(8)">8</button>
+                        <button class="btn" onclick="enterNumber(9)">9</button>
+                        <button class="btn" onclick="enterNumber('.')">.</button>
+                        <button class="btn" onclick="enterNumber(0)">0</button>
+                        <button class="btn" onclick="deleteLastNumber()"></button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="left-area">
+                <img src="./imgs/SEDCO-logo.png" height="40" alt="">
+            </div>
+            <div class="right-area">
+                <button class="submit-btn" id="submit-btn">Submit</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="confirm-modal" id="confirm-modal">
+        <div class="modal-message">
+            <h2>Are you sure you want to continue?</h2>
+            <div class="actions-btns">
+                <button class="action" id="yes">Yes</button>
+                <button class="action" id="no">No</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="success-modal" id="success-modal">
+        <div class="modal-message">
+            <p>You Payment Was Submitted
+                Successfully For This Number
+                <span id="number"></span></p>
+        </div>
+    </section>
+
+
+
+    <script type="text/javascript" src="./Js/App.js"></script>
+</body>
+
+</html>
