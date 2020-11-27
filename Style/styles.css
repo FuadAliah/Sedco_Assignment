@@ -72,11 +72,13 @@
 
   .first-screen .page-content .left-area .page-form .counteries {
     position: absolute;
+    width: 120px;
+    height: 141px;
+    overflow-y: scroll;
     top: 60px;
     left: 0;
     background: #fff;
     list-style: none;
-    width: 120px;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     display: none;
